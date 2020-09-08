@@ -1,0 +1,32 @@
+/* -------------------------------------------------
+    Variables
+   ------------------------------------------------- */
+
+:root {
+    --font-color: #171717;
+    --font-high-contrast: #ffffff;
+
+    --high-contrast-color: #fafafa;
+    --low-contrast-color: #131418;
+
+    --panel-size: 50%;
+    --space-unit: .5rem;
+}
+
+/* -------------------------------------------------
+    Element styles
+   ------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    color: var(--font-color);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .025rem;
+    line-height: 1.5;
+    margin: 0;
+    word-spacing: .075rem;
+}
