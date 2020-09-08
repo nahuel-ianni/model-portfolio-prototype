@@ -1,4 +1,4 @@
-# Camille. L'atelier de bougies
+# Monique B. - Independent photographer
 Website created for an independent photographer to advertise her work.
 
 You can see a live demo of the application [here](https://nahuel-ianni.github.io/monique-photographer/).
