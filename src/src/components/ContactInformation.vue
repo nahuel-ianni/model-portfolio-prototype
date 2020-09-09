@@ -32,7 +32,15 @@ export default {
 </script>
 
 <style scoped>
-h2, p {
+a,
+p {
+  color: var(--high-contrast-color);
+  font-size: 0.9rem;
+  font-weight: 200;
+  mix-blend-mode: exclusion;
+}
+h2,
+p {
   margin: 0;
 }
 ul {
