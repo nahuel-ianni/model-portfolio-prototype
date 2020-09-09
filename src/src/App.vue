@@ -1,16 +1,23 @@
 <template>
   <div class="container">
-    <ContactInformation />
+    <header></header>
+
+    <main>
+      <HeroPanel />
+      <Home />
+    </main>
   </div>
 </template>
 
 <script>
-import { ContactInformation } from "./components";
+import { Home } from "./pages";
+import { HeroPanel } from "./components";
 
 export default {
   name: "App",
   components: {
-    ContactInformation,
+    HeroPanel,
+    Home,
   },
 };
 </script>
@@ -18,6 +25,9 @@ export default {
 <style src="./assets/css/style.css" lang="css"></style>
 
 <style scoped>
+main {
+  display: flex;
+}
 .container {
   background: linear-gradient(
     to right,
@@ -26,7 +36,7 @@ export default {
   );
   border-top: var(--space-unit) solid var(--low-contrast-color);
   height: 100vh;
-  padding: var(--space-unit);
+  padding: var(--space-unit) 0;
 }
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

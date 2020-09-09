@@ -3,14 +3,11 @@
    ------------------------------------------------- */
 
 :root {
-    --font-color: #171717;
-    --font-high-contrast: #ffffff;
-
     --high-contrast-color: #fafafa;
     --low-contrast-color: #131418;
 
     --panel-size: 50%;
-    --space-unit: .5rem;
+    --space-unit: 1rem;
 }
 
 /* -------------------------------------------------
@@ -23,10 +20,10 @@
 
 body,
 html {
-    color: var(--font-color);
+    color: var(--low-contrast-color);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: .025rem;
     line-height: 1.5;
     margin: 0;
-    word-spacing: .075rem;
+    word-spacing: .05rem;
 }
