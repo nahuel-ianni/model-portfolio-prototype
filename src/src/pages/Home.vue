@@ -1,10 +1,17 @@
 <template>
-  <div>HOME PAGE!</div>
+  <section>
+    <ContactInformation />
+  </section>
 </template>
 
 <script>
+import { ContactInformation } from "../components";
+
 export default {
   name: "Home",
+  components: {
+    ContactInformation,
+  },
 };
 </script>
 

@@ -28,6 +28,7 @@ export default {
 main {
   display: flex;
 }
+
 .container {
   background: linear-gradient(
     to right,
@@ -38,12 +39,4 @@ main {
   height: 100vh;
   padding: var(--space-unit) 0;
 }
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
 </style>

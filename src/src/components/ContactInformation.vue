@@ -4,21 +4,21 @@
 
     <ul>
       <li>
-        <a href="mailto:monique@ap.com">monique@ap.com</a>
+        <a href="mailto:anastasia@arbos.com">anastasia@arbos.com</a>
       </li>
       <li>
-        <a href="tel:+46812031580">+46 8 120 315 80</a>
+        <a href="tel:+3902120135623">+39 02 120 135 623</a>
       </li>
       <li>
         <p>
           inst:
-          <a href="http://" target="_blank" rel="noopener noreferrer">@moniqueb</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">@anastasia.arbos</a>
         </p>
       </li>
       <li>
         <p>
           behance:
-          <a href="http://" target="_blank" rel="noopener noreferrer">moniqueb</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">anastasia.arbos</a>
         </p>
       </li>
     </ul>
@@ -32,10 +32,7 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  margin: 0;
-}
-p {
+h2, p {
   margin: 0;
 }
 ul {
