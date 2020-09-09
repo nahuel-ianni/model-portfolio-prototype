@@ -5,7 +5,12 @@
       <p>Abstract photographer</p>
     </div>
 
-    <p>BOTTOM</p>
+    <p>
+      My mission is to
+      <br />immortalize beautiful
+      <br />moments before they're
+      <br />gone forever.
+    </p>
   </section>
 </template>
 
@@ -32,14 +37,15 @@ section {
 section > p {
   background-color: var(--low-contrast-color);
   color: var(--high-contrast-color);
-  padding: 2rem;
-  text-align: center;
+  font-weight: 300;
+  padding: 3rem;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: auto 0;
+  padding: 0 3rem;
   transform: rotate(-180deg);
   writing-mode: tb-rl;
 }
