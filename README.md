@@ -57,7 +57,6 @@ $ npm run build
 
 ## Built with
 The application was created using [Vue.js](https://vuejs.org/), semantic HTML 5 and CSS 3.
-Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/).
 
 
 ## Author
