@@ -35,10 +35,9 @@ export default {
     return {
       settings: {
         autoPlay: 7500,
-        pauseAutoPlayOnHover: true,
-
         cellAlign: "left",
         pageDots: false,
+        pauseAutoPlayOnHover: true,
         prevNextButtons: false,
         setGallerySize: true,
         wrapAround: true,
