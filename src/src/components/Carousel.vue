@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       settings: {
-        autoPlay: 7500,
+        autoPlay: 5000,
         cellAlign: "left",
         pageDots: false,
         pauseAutoPlayOnHover: true,

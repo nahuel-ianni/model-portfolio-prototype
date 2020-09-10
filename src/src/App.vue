@@ -4,16 +4,16 @@
       <nav>
         <ul>
           <li>
-            <a class="nav-link" href="">Home</a>
+            <router-link class="nav-link" to="/">Home</router-link>
           </li>
           <li>
-            <a class="nav-link" href="">About</a>
+            <router-link class="nav-link" to="/about">About</router-link>
           </li>
           <li>
-            <a class="nav-link" href="">Portfolio</a>
+            <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
           </li>
           <li>
-            <a class="nav-link" href="">Contact</a>
+            <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
         </ul>
       </nav>
@@ -21,20 +21,18 @@
 
     <main>
       <HeroPanel />
-      <Home />
+      <router-view />
     </main>
   </div>
 </template>
 
 <script>
-import { Home } from "./pages";
 import { HeroPanel } from "./components";
 
 export default {
   name: "App",
   components: {
     HeroPanel,
-    Home,
   },
 };
 </script>
@@ -76,8 +74,8 @@ ul {
   background-repeat: no-repeat;
   background-size: 0% 1px;
   color: var(--high-contrast-color);
-  padding-bottom: .3rem;
-  transition: all .2s ease-in-out;
+  padding-bottom: 0.3rem;
+  transition: all 0.2s ease-in-out;
 }
 .nav-link:hover,
 .nav-link:focus {
