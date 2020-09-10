@@ -26,7 +26,8 @@ export default {
 
 <style scoped>
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(auto, 16.5rem) auto;
 }
 
 .container {
