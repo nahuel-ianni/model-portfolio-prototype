@@ -5,7 +5,7 @@ import { About, Contact, Home, PageNotFound, Portfolio } from '../pages';
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     { path: '/', component: Home, },
     { path: '/about', component: About, },
