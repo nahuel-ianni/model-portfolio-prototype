@@ -2,7 +2,7 @@
   <div class="container">
     <header>
       <nav>
-        <ul>
+        <ul class="navigation-links">
           <li>
             <router-link class="nav-link" to="/">Home</router-link>
           </li>
@@ -21,17 +21,22 @@
 
     <main>
       <HeroPanel />
-      <router-view />
+
+      <section class="content-panel">
+        <ContactInformation />
+        <router-view />
+      </section>
     </main>
   </div>
 </template>
 
 <script>
-import { HeroPanel } from "./components";
+import { ContactInformation, HeroPanel } from "./components";
 
 export default {
   name: "App",
   components: {
+    ContactInformation,
     HeroPanel,
   },
 };
@@ -40,20 +45,6 @@ export default {
 <style src="./assets/css/style.css" lang="css"></style>
 
 <style scoped>
-main {
-  display: grid;
-  grid-template-columns: minmax(auto, 16.5rem) auto;
-}
-nav {
-  position: fixed;
-  right: 3rem;
-  top: 2.5rem;
-}
-ul {
-  display: flex;
-  gap: 1.5rem;
-}
-
 .container {
   background: linear-gradient(
     to right,
@@ -63,6 +54,11 @@ ul {
   border-top: var(--space-unit) solid var(--low-contrast-color);
   height: 100vh;
   padding: var(--space-unit) 0;
+}
+.content-panel {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 2rem;
 }
 .nav-link {
   background-image: linear-gradient(
@@ -80,5 +76,9 @@ ul {
 .nav-link:hover,
 .nav-link:focus {
   background-size: 95% 1px;
+}
+.navigation-links {
+  display: flex;
+  gap: 1.5rem;
 }
 </style>

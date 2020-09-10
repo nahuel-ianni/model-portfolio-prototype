@@ -43,6 +43,17 @@ h2 {
   font-weight: 500;
 }
 
+main {
+  display: grid;
+  grid-template-columns: minmax(auto, 16.5rem) auto;
+}
+
+nav {
+  position: fixed;
+  right: 3rem;
+  top: 2.5rem;
+}
+
 section {
   height: calc(100vh - calc(var(--space-unit) * 2));
 }
