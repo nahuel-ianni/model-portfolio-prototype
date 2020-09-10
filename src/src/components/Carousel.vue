@@ -53,6 +53,6 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: top;
-  width: 90%;
+  width: 85%;
 }
 </style>
