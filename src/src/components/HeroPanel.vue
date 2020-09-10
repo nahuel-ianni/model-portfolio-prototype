@@ -6,7 +6,7 @@
     </div>
 
     <p>
-      I moved to Milan,
+      I moved to Milan
       <br />and want to shoot.
       <br />
       <br />Get in touch,
