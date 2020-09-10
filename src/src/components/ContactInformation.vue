@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2>Cooperation</h2>
+    <h2>Contact me</h2>
 
     <ul>
       <li>
@@ -38,6 +38,24 @@ export default {
 </script>
 
 <style scoped>
+a {
+  color: var(--low-contrast-color);
+  position: relative;
+}
+a:before {
+  border-bottom: solid 1px var(--low-contrast-color);
+  bottom: 2px;
+  content: '';
+  left: 1.25%;
+  position: absolute;
+  width: 97.5%;
+}
+a:hover {
+  color: var(--accent-color);
+}
+a:hover:before {
+  border-bottom: solid thin var(--accent-color);
+}
 h2 {
   margin: 0;
 }
@@ -54,8 +72,5 @@ svg {
 ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 15rem));
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 </style>

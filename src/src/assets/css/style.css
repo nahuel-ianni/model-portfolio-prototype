@@ -4,7 +4,7 @@
 
 :root {
   --accent-color: #992f43;
-  
+
   --high-contrast-color: #fafafa;
   --low-contrast-color: #131418;
 
@@ -21,26 +21,7 @@
 }
 
 a {
-  color: var(--low-contrast-color);
-  position: relative;
   text-decoration: none;
-}
-
-a:before {
-  border-bottom: solid 1px var(--low-contrast-color);
-  bottom: 2px;
-  content: '';
-  left: 1.25%;
-  position: absolute;
-  width: 97.5%;
-}
-
-a:hover {
-  color: var(--accent-color);
-}
-
-a:hover:before {
-  border-bottom: solid thin var(--accent-color);
 }
 
 body,
@@ -64,4 +45,10 @@ h2 {
 
 section {
   height: calc(100vh - calc(var(--space-unit) * 2));
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
