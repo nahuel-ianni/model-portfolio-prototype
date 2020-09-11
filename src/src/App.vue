@@ -23,7 +23,7 @@
         <ContactInformation />
         <router-view />
 
-        <hr />
+        <hr class="horizontal" />
         <hr class="vertical" />
       </section>
     </main>
@@ -60,6 +60,15 @@ export default {
   grid-template-rows: auto 1fr;
   gap: 2rem;
 }
+.horizontal, .vertical {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  bottom: 2.25%;
+  height: 0;
+  position: absolute;
+  right: 2%;
+  width: 20%;
+}
 .nav-link {
   background-image: linear-gradient(
     90deg,
@@ -80,16 +89,6 @@ export default {
 .navigation-links {
   display: flex;
   gap: 1.5rem;
-}
-
-hr {
-  border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
-  bottom: 2.25%;
-  height: 0;
-  position: absolute;
-  right: 2%;
-  width: 20%;
 }
 .vertical {
   transform: rotate(90deg);
