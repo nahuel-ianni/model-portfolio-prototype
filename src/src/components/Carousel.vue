@@ -59,9 +59,9 @@ export default {
 
 <style scoped>
 div {
-  background-color: var(--low-contrast-color);
-  height: 100%;
+  height: 97%;
   position: relative;
+  width: 98.5%;
   z-index: 50;
 }
 img {
@@ -79,13 +79,14 @@ svg:hover {
 }
 
 .navigation-controls {
-  bottom: 0;
+  background-color: var(--low-contrast-color);
+  bottom: 2.95%;
   display: flex;
   gap: 1.25rem;
   height: auto;
-  left: calc(85% + 2px);
-  padding: 0.75rem;
-  position: fixed;
-  transform: translateX(-50%);
+  padding: .75rem;
+  position: absolute;
+  right: 16.25%;
+  width: auto;
 }
 </style>
