@@ -58,10 +58,10 @@ export default {
 .vertical {
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 1);
-  bottom: 2.25%;
+  bottom: 1.5%;
   height: 0;
   position: absolute;
-  right: 1.5%;
+  right: 1.15%;
   width: 20%;
 }
 .nav-link {

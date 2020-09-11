@@ -35,7 +35,7 @@ section > p {
   background-color: var(--low-contrast-color);
   color: var(--high-contrast-color);
   font-weight: 300;
-  padding: 3rem;
+  padding: 2rem 3rem;
   width: 50vw;
 }
 
