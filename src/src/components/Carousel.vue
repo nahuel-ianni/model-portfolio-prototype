@@ -40,7 +40,7 @@ export default {
         pageDots: false,
         pauseAutoPlayOnHover: true,
         prevNextButtons: false,
-        setGallerySize: true,
+        setGallerySize: false,
         wrapAround: true,
       },
     };
