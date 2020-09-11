@@ -1,10 +1,10 @@
 <template>
   <div>
     <Flickity ref="flickity" :options="settings">
-      <img src="../assets/img/img-1.jpeg" alt />
-      <img src="../assets/img/img-2.jpeg" alt />
-      <img src="../assets/img/img-3.jpeg" alt />
-      <img src="../assets/img/img-4.jpeg" alt />
+      <img src="../assets/img/img-1.jpeg" alt="Picture from a set." />
+      <img src="../assets/img/img-2.jpeg" alt="Picture from a set." />
+      <img src="../assets/img/img-3.jpeg" alt="Picture from a set." />
+      <img src="../assets/img/img-4.jpeg" alt="Picture from a set." />
     </Flickity>
 
     <div class="navigation-controls">
@@ -36,6 +36,7 @@ export default {
       settings: {
         autoPlay: 5000,
         cellAlign: "left",
+        initialIndex: Math.floor(Math.random() * Math.floor(4)),
         pageDots: false,
         pauseAutoPlayOnHover: true,
         prevNextButtons: false,
