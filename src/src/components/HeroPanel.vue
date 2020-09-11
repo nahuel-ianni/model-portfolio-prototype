@@ -36,6 +36,7 @@ section > p {
   color: var(--high-contrast-color);
   font-weight: 300;
   padding: 3rem;
+  width: 50vw;
 }
 
 .header {
