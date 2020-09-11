@@ -2,7 +2,7 @@
   <section>
     <div class="header">
       <h1>Anastasia Arbos</h1>
-      <p>Fashion model and photographer</p>
+      <p>Fashion model photographer</p>
     </div>
 
     <p>
