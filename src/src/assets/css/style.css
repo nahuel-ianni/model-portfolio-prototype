@@ -50,8 +50,8 @@ main {
 
 nav {
   position: fixed;
-  right: 3rem;
-  top: 2.5rem;
+  right: calc(var(--space-unit) * 3);
+  top: calc(var(--space-unit) * 2.5);
 }
 
 section {

@@ -22,6 +22,9 @@
       <section class="content-panel">
         <ContactInformation />
         <router-view />
+
+        <hr />
+        <hr class="vertical" />
       </section>
     </main>
   </div>
@@ -44,9 +47,8 @@ export default {
 <style scoped>
 .container {
   background: linear-gradient(
-    135deg, 
-    /* to right, */
-    var(--high-contrast-color) var(--panel-size),
+    135deg,
+    /* to right, */ var(--high-contrast-color) var(--panel-size),
     var(--low-contrast-color) var(--panel-size) calc(var(--panel-size) * 2)
   );
   border-top: var(--space-unit) solid var(--low-contrast-color);
@@ -78,5 +80,19 @@ export default {
 .navigation-links {
   display: flex;
   gap: 1.5rem;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  bottom: 2.25%;
+  height: 0;
+  position: absolute;
+  right: 2%;
+  width: 20%;
+}
+.vertical {
+  transform: rotate(90deg);
+  transform-origin: 100% 50%;
 }
 </style>

@@ -61,6 +61,7 @@ div {
   background-color: var(--low-contrast-color);
   height: 100%;
   position: relative;
+  z-index: 50;
 }
 img {
   height: 100%;
