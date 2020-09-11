@@ -61,7 +61,7 @@ export default {
   bottom: 2.25%;
   height: 0;
   position: absolute;
-  right: 2%;
+  right: 1.5%;
   width: 20%;
 }
 .nav-link {
