@@ -63,3 +63,29 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/* -------------------------------------------------
+    Class styles
+   ------------------------------------------------- */
+
+.link {
+  color: var(--low-contrast-color);
+  position: relative;
+}
+
+.link:before {
+  border-bottom: solid 1px var(--low-contrast-color);
+  bottom: 2px;
+  content: '';
+  left: 1.25%;
+  position: absolute;
+  width: 97.5%;
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+.link:hover:before {
+  border-bottom: solid thin var(--accent-color);
+}
