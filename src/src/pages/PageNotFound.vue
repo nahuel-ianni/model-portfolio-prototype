@@ -16,7 +16,7 @@ export default {
 
 <style scoped>
 div {
-  margin-top: 10%;
+  margin-top: 12.5%;
 }
 h2 {
   color: var(--high-contrast-color);
