@@ -63,9 +63,6 @@ li {
   display: flex;
   gap: .5rem;
 }
-li:hover > svg {
-  fill: var(--accent-color);
-}
 svg {
   width: 1rem;
 }
