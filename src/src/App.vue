@@ -12,9 +12,6 @@
           <li>
             <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
           </li>
-          <li>
-            <router-link class="nav-link" to="/contact">Contact</router-link>
-          </li>
         </ul>
       </nav>
     </header>
@@ -47,7 +44,8 @@ export default {
 <style scoped>
 .container {
   background: linear-gradient(
-    to right,
+    135deg, 
+    /* to right, */
     var(--high-contrast-color) var(--panel-size),
     var(--low-contrast-color) var(--panel-size) calc(var(--panel-size) * 2)
   );
