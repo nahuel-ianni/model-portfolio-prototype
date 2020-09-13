@@ -4,8 +4,9 @@
       <SiteNavigation />
     </header>
 
-    <main class="main">
+    <main>
       <HeaderPanel />
+      <router-view />
     </main>
   </div>
 </template>
@@ -23,11 +24,3 @@ export default {
 </script>
 
 <style src="./assets/css/style.css" lang="css"></style>
-
-<style scoped>
-.main {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto;
-}
-</style>
