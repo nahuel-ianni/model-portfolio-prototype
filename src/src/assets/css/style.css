@@ -8,6 +8,7 @@
   --high-contrast-color: #fafafa;
   --low-contrast-color: #131418;
 
+  --margin-top: 1rem;
   --panel-size: 50%;
   --space-unit: 2rem;
 }
@@ -38,8 +39,18 @@ body {
   background: linear-gradient(135deg,
       var(--high-contrast-color) 50%,
       var(--low-contrast-color) 50% 100%);
-  border-top: 1rem solid var(--low-contrast-color);
+  border-top: var(--margin-top) solid var(--low-contrast-color);
   height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 ul {
@@ -62,9 +73,9 @@ ul {
 @media (max-width: 1300px),
 (max-height: 725px) {
   body {
-    background: linear-gradient(90deg,
-        var(--high-contrast-color) 50%,
-        var(--low-contrast-color) 50% 100%);
+    background: linear-gradient(135deg,
+        var(--high-contrast-color) 35%,
+        var(--low-contrast-color) 35% 100%);
   }
 }
 

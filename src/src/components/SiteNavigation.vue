@@ -64,6 +64,7 @@ export default {
   right: calc(var(--space-unit) * 1.5);
   text-align: right;
   top: var(--space-unit);
+  z-index: 100;
 }
 
 .svg {
