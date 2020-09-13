@@ -54,7 +54,7 @@ $ npm run build
 
 
 ## Built with
-The application was created using [Vue.js](https://vuejs.org/), semantic HTML 5 and CSS 3.
+The application was created using [Vue.js](https://vuejs.org/), HTML 5 and CSS 3.
 
 
 ## Author
