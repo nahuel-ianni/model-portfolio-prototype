@@ -6,8 +6,11 @@
 
     <main class="main">
       <HeaderPanel />
-      <ContactInformation />
-      <router-view />
+
+      <div>
+        <ContactInformation class="desktop" />
+        <router-view />
+      </div>
     </main>
   </div>
 </template>
@@ -19,7 +22,7 @@ export default {
   name: "App",
 
   components: {
-    ContactInformation, 
+    ContactInformation,
     HeaderPanel,
     SiteNavigation,
   },
@@ -39,10 +42,6 @@ export default {
     display: flex;
     flex-direction: column;
     padding: var(--space-unit) 0;
-  }
-
-  .main > article {
-    display: none;
   }
 }
 </style>
