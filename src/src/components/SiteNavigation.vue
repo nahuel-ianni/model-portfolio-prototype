@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <svg class="mobile svg" viewBox="0 0 448 512">
+    <svg class="mobile svg" :class="{'expanded-menu': expandMenu}" viewBox="0 0 448 512">
       <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
     </svg>
 
@@ -70,7 +70,9 @@ export default {
 .svg {
   cursor: pointer;
   fill: var(--low-contrast-color);
+  position: relative;
   width: 1.25rem;
+  z-index: 100;
 }
 
 .ul {
@@ -81,11 +83,12 @@ export default {
 @media (max-width: 850px) {
   .expanded-menu {
     left: 0vw !important;
+    fill: var(--high-contrast-color);
   }
 
   .nav {
     right: calc(var(--space-unit) / 2);
-    top: calc(var(--space-unit) / 1.5);
+    top: calc(var(--space-unit) / 1.25);
   }
 
   .ul {
@@ -93,10 +96,10 @@ export default {
     flex-direction: column;
     height: 100%;
     left: 100%;
-    overflow: hidden;
-    padding: calc(var(--space-unit) / 2);
+    padding: calc(var(--space-unit) * 2) calc(var(--space-unit) / 2);
     position: fixed;
     right: 0;
+    top: 0;
     transition: left 0.2s ease-in-out;
   }
 }
