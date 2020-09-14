@@ -69,7 +69,7 @@ export default {
 
 .svg {
   cursor: pointer;
-  fill: var(--high-contrast-color);
+  fill: var(--low-contrast-color);
   width: 1.25rem;
 }
 
@@ -80,11 +80,12 @@ export default {
 
 @media (max-width: 850px) {
   .expanded-menu {
-    left: 70vw !important;
+    left: 0vw !important;
   }
 
   .nav {
-    right: var(--space-unit);
+    right: calc(var(--space-unit) / 2);
+    top: calc(var(--space-unit) / 1.5);
   }
 
   .ul {
@@ -93,7 +94,7 @@ export default {
     height: 100%;
     left: 100%;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: calc(var(--space-unit) / 2);
     position: fixed;
     right: 0;
     transition: left 0.2s ease-in-out;

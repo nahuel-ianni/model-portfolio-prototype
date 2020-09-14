@@ -80,6 +80,14 @@ ul {
 }
 
 @media (max-width: 850px) {
+  body {
+    background: unset;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
   .mobile {
     display: inline-block;
   }

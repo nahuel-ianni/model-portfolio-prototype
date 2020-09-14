@@ -1,11 +1,11 @@
 <template>
   <section class="section">
-    <div class="div">
+    <div class="title">
       <h1>Anastasia Arbos</h1>
       <p>Fashion model photographer</p>
     </div>
 
-    <p>
+    <p class="subtitle">
       I moved to Milan
       <br />and want to shoot.
       <br />
@@ -16,12 +16,6 @@
 </template>
 
 <style scoped>
-.div {
-  padding: 0 3rem;
-  transform: rotate(180deg);
-  writing-mode: tb-rl;
-}
-
 .section {
   align-items: center;
   display: grid;
@@ -29,9 +23,40 @@
   height: calc(100vh - var(--margin-top));
 }
 
-.section > p {
+.subtitle {
   background-color: var(--low-contrast-color);
   color: var(--high-contrast-color);
   padding: 2.6rem 3rem;
+  width: 100%;
+}
+
+.title {
+  padding: 0 3rem;
+  transform: rotate(180deg);
+  writing-mode: tb-rl;
+}
+
+@media (max-width: 850px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .subtitle {
+    padding: var(--space-unit);
+  }
+
+  .subtitle br:first-child,
+  .subtitle br:last-child {
+    display: none;
+  }
+
+  .title {
+    transform: unset;
+    writing-mode: unset;
+  }
 }
 </style>
