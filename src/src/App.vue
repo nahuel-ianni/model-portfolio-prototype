@@ -17,7 +17,7 @@ import { ContactInformation, HeaderPanel, SiteNavigation } from "./components";
 
 export default {
   name: "App",
-  
+
   components: {
     ContactInformation, 
     HeaderPanel,
@@ -34,7 +34,7 @@ export default {
   grid-template-columns: auto 1fr;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 980px) {
   .main {
     display: flex;
     flex-direction: column;

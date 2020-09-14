@@ -40,7 +40,7 @@ export default { name: "HeaderPanel" };
   writing-mode: tb-rl;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 980px) {
   .section {
     display: flex;
     flex-direction: column;

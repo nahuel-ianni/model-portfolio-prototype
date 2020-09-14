@@ -63,9 +63,9 @@ export default {
 
 .nav {
   position: absolute;
-  right: calc(var(--space-unit) * 1.5);
+  right: calc(var(--space-unit) * .75);
   text-align: right;
-  top: var(--space-unit);
+  top: calc(var(--space-unit) * 1.25);
   z-index: 100;
 }
 
@@ -82,7 +82,7 @@ export default {
   gap: 1.5rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 980px) {
   .expanded-menu {
     left: 0vw !important;
     fill: var(--high-contrast-color);
