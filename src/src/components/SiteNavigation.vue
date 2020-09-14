@@ -78,9 +78,9 @@ export default {
   gap: 1.5rem;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 850px) {
   .expanded-menu {
-    left: 50vw !important;
+    left: 70vw !important;
   }
 
   .nav {

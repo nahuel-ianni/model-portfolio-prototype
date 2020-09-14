@@ -33,6 +33,5 @@
   background-color: var(--low-contrast-color);
   color: var(--high-contrast-color);
   padding: 2.6rem 3rem;
-  width: 100vw;
 }
 </style>

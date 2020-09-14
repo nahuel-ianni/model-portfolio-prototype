@@ -73,13 +73,13 @@ ul {
 @media (max-width: 1300px),
 (max-height: 725px) {
   body {
-    background: linear-gradient(135deg,
-        var(--high-contrast-color) 35%,
-        var(--low-contrast-color) 35% 100%);
+    background: linear-gradient(90deg,
+        var(--high-contrast-color) 50%,
+        var(--low-contrast-color) 50% 100%);
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 850px) {
   .mobile {
     display: inline-block;
   }
