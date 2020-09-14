@@ -40,5 +40,9 @@ export default {
     flex-direction: column;
     padding: var(--space-unit) 0;
   }
+
+  .main > article {
+    display: none;
+  }
 }
 </style>
