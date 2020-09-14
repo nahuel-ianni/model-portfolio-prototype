@@ -15,6 +15,10 @@
   </section>
 </template>
 
+<script>
+export default { name: "HeaderPanel" };
+</script>
+
 <style scoped>
 .section {
   align-items: center;

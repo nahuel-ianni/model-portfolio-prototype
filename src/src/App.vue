@@ -6,17 +6,20 @@
 
     <main class="main">
       <HeaderPanel />
+      <ContactInformation />
       <router-view />
     </main>
   </div>
 </template>
 
 <script>
-import { HeaderPanel, SiteNavigation } from "./components";
+import { ContactInformation, HeaderPanel, SiteNavigation } from "./components";
 
 export default {
   name: "App",
+  
   components: {
+    ContactInformation, 
     HeaderPanel,
     SiteNavigation,
   },
