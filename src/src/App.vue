@@ -8,7 +8,11 @@
       <HeaderPanel />
 
       <section class="content">
-        <ContactInformation class="desktop" />
+        <section class="desktop">
+          <h2>Contact me</h2>
+          <ContactInformation />
+        </section>
+
         <router-view />
 
         <hr class="desktop rule" />
@@ -66,11 +70,11 @@ export default {
 
 @media (max-width: 980px) {
   .content {
-    border: .25rem solid var(--low-contrast-color);
+    border: 0.25rem solid var(--low-contrast-color);
     display: flex;
     height: 100%;
     margin: 0;
-    padding: .75rem;
+    padding: 0.75rem;
   }
 
   .main {

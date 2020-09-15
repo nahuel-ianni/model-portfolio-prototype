@@ -1,7 +1,5 @@
 <template>
   <article>
-    <h2>Contact me</h2>
-
     <ul class="ul">
       <li class="li">
         <svg class="svg" viewBox="0 0 512 512">
@@ -48,5 +46,14 @@ export default { name: "ContactInformation" };
 .ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 15rem));
+}
+
+@media (max-width: 980px) {
+  .ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
 }
 </style>
