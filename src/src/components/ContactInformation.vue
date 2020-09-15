@@ -45,10 +45,6 @@ export default { name: "ContactInformation" };
   gap: 0.5rem;
 }
 
-.svg {
-  width: 1rem;
-}
-
 .ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 15rem));

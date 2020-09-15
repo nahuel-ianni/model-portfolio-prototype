@@ -43,6 +43,15 @@ body {
   height: 100vh;
 }
 
+footer {
+  background-color: var(--low-contrast-color);
+  bottom: 0;
+  position: fixed;
+  height: 192px;
+  width: 100vw;
+  z-index: -1;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -50,11 +59,16 @@ h1 {
 }
 
 h2 {
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
 p {
   margin: 0;
+}
+
+svg {
+  width: 1rem;
 }
 
 ul {
@@ -101,7 +115,7 @@ ul {
     Media queries
    ------------------------------------------------- */
 
-@media (max-width: 1300px),
+@media (max-width: 1349px),
 (max-height: 725px) {
   body {
     background: linear-gradient(90deg,
@@ -113,10 +127,17 @@ ul {
 @media (max-width: 980px) {
   body {
     background: unset;
+    background-color: var(--low-contrast-color);
+    text-align: center;
   }
 
   h1 {
     font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 
   .desktop {

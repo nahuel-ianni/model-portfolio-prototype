@@ -30,7 +30,7 @@ export default { name: "HeaderPanel" };
 .subtitle {
   background-color: var(--low-contrast-color);
   color: var(--high-contrast-color);
-  padding: 2.6rem 3rem;
+  padding: 2.25rem 3rem;
   width: 100%;
 }
 
@@ -46,7 +46,6 @@ export default { name: "HeaderPanel" };
     flex-direction: column;
     gap: var(--space-unit);
     height: auto;
-    text-align: center;
   }
 
   .subtitle {

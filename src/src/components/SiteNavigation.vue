@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
-    <svg class="mobile svg" :class="{'expanded-menu': expandMenu}" viewBox="0 0 448 512">
-      <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+    <svg class="mobile nav-menu svg" :class="{'expanded-menu': expandMenu}" viewBox="0 0 448 512">
+      <path class="nav-menu" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
     </svg>
 
     <ul class="ul" :class="{'expanded-menu': expandMenu}">
@@ -25,7 +25,7 @@ export default {
 
   methods: {
     toggleMenuVisibility: function (event) {
-      if (this.expandMenu || event.target.localName === "path" || event.target.localName === "svg")
+      if (this.expandMenu || event.target.classList.contains("nav-menu"))
         this.expandMenu = !this.expandMenu;
     },
   },

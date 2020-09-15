@@ -14,17 +14,28 @@ export default { name: "PageNotFound" };
 
 <style scoped>
 .section {
-  padding: 17% 0 0 0;
+  padding: 10% 0 0 0;
 }
 
 .h2 {
   color: var(--high-contrast-color);
-  font-size: 2.5rem;
   font-weight: 600;
   mix-blend-mode: exclusion;
 }
 
 .link:before {
   bottom: -1px;
+}
+
+@media (max-width: 980px) {
+  .h2 {
+    color: var(--low-contrast-color);
+    mix-blend-mode: unset;
+  }
+
+  .section {
+    margin: 20% 0;
+    padding: 0;
+  }
 }
 </style>
