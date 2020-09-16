@@ -10,9 +10,7 @@
       <li><img class="img" src="../assets/img/img-1.jpeg" alt="Portfolio image" /></li>
       <li><img class="img" src="../assets/img/img-2.jpeg" alt="Portfolio image" /></li>
       <li><img class="img" src="../assets/img/img-3.jpeg" alt="Portfolio image" /></li>
-      <li><img class="img" src="../assets/img/img-4.jpeg" alt="Portfolio image" /></li>
       <li><img class="img" src="../assets/img/img-5.jpeg" alt="Portfolio image" /></li>
-      <li><img class="img" src="../assets/img/img-6.jpeg" alt="Portfolio image" /></li>
     </ul>
   </section>
 </template>
@@ -29,7 +27,13 @@ export default { name: "Portfolio" };
 .ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1rem 0;
+  justify-content: space-between;
+  margin: 1rem 0 0 0;
+}
+
+@media (max-width: 980px) {
+  .img {
+    max-width: 40vw;
+  }
 }
 </style>

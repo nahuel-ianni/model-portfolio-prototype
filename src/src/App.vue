@@ -42,9 +42,9 @@ export default {
 
 <style scoped>
 .content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  grid-template-rows: auto minmax(50px, 100%);
   margin: 0 2.95rem 2.75rem 0;
 }
 
@@ -71,7 +71,6 @@ export default {
 @media (max-width: 980px) {
   .content {
     border: 0.25rem solid var(--low-contrast-color);
-    display: flex;
     height: 100%;
     margin: 0;
     padding: 0.75rem;
