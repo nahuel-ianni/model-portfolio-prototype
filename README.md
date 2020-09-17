@@ -1,5 +1,7 @@
-# <PENDING TITLE>
-<PENDING INTRO>
+# Portfolio prototype
+A portfolio prototype created for a sales pitch, showcasing the styles and content recommended to the client for their personal website.
+
+You can see a live demo of the website [here](https://nahuel-ianni.github.io/portfolio-prototype/).
 
 
 ## Table of contents
