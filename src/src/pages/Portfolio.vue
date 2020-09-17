@@ -33,7 +33,11 @@ export default { name: "Portfolio" };
 
 @media (max-width: 980px) {
   .img {
-    max-width: 40vw;
+    max-width: 42.75vw;
+  }
+
+  .ul {
+    justify-content: space-evenly;
   }
 }
 </style>
