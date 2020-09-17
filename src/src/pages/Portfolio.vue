@@ -7,23 +7,26 @@
     </p>
 
     <ul class="ul">
-      <li><img class="img" src="../assets/img/img-1.jpeg" alt="Portfolio image" /></li>
-      <li><img class="img" src="../assets/img/img-2.jpeg" alt="Portfolio image" /></li>
-      <li><img class="img" src="../assets/img/img-3.jpeg" alt="Portfolio image" /></li>
-      <li><img class="img" src="../assets/img/img-5.jpeg" alt="Portfolio image" /></li>
+      <li v-for="index in items" :key="index">
+        <ModalImage :src="`img-${index}`" />
+      </li>
     </ul>
   </section>
 </template>
 
 <script>
-export default { name: "Portfolio" };
+import { ModalImage } from "../components";
+
+export default {
+  name: "Portfolio",
+
+  props: { items: Number, },
+
+  components: { ModalImage },
+};
 </script>
 
 <style scoped>
-.img {
-  max-width: 20vw;
-}
-
 .ul {
   display: flex;
   flex-wrap: wrap;
@@ -32,10 +35,6 @@ export default { name: "Portfolio" };
 }
 
 @media (max-width: 980px) {
-  .img {
-    max-width: 42.75vw;
-  }
-
   .ul {
     justify-content: space-evenly;
   }
