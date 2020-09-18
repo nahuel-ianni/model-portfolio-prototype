@@ -20,7 +20,7 @@ import { ModalImage } from "../components";
 export default {
   name: "Portfolio",
 
-  props: { items: Number, },
+  props: { items: Number },
 
   components: { ModalImage },
 };
@@ -31,15 +31,19 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  height: 55.75vh;
   justify-content: center;
   margin-top: 2rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @media (max-width: 980px) {
   .ul {
     gap: 0;
+    height: 37.5vh;
     justify-content: space-evenly;
-    margin-top: .25rem;
+    margin-top: 0.25rem;
   }
 }
 </style>
