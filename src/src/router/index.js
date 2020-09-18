@@ -10,7 +10,7 @@ export default new Router({
     { path: '/', component: Home, },
     { path: '/about', component: About, },
     { path: '/contact', component: Contact, },
-    { path: '/portfolio', component: Portfolio, props: { items: 5 } },
+    { path: '/portfolio', component: Portfolio, props: { items: 6 } },
     { path: '*', component: PageNotFound }
   ],
 });

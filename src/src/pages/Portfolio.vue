@@ -2,8 +2,8 @@
   <section>
     <h2>Portfolio</h2>
     <p>
-      In here, you'll find a selection of my previous work.
-      <br />If you want to see more, do not hesitate in contacting me!
+      This is but a sample of my previous work.
+      <br />Want to see more? Get in touch with me!
     </p>
 
     <ul class="ul">
@@ -30,13 +30,16 @@ export default {
 .ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 1rem 0 0 0;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 @media (max-width: 980px) {
   .ul {
+    gap: 0;
     justify-content: space-evenly;
+    margin-top: .25rem;
   }
 }
 </style>
