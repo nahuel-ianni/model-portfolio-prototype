@@ -31,7 +31,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  height: 55.75vh;
+  height: 57.5vh;
   justify-content: center;
   margin-top: 2rem;
   overflow-x: hidden;
