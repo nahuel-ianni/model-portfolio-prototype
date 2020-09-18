@@ -53,7 +53,6 @@ export default {
 }
 
 .img {
-  border: 2px solid rgb(100, 100, 100);
   cursor: pointer;
   max-width: 20vw;
   transition: all 0.2s ease;
