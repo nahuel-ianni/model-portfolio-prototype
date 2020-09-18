@@ -6,7 +6,7 @@
     </div>
 
     <p class="subtitle">
-      I moved to Milan
+      I've moved to Milan
       <br />and want to shoot.
       <br />
       <br />Get in touch,

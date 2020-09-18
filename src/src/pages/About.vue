@@ -7,7 +7,7 @@
         <br />I'm Anastasia, a passionate photographer.
         <br />
         <br />I've been part of the fashion industry for over 20 years now, as well as a hobbist landscape lover.
-        <br />I try to find beauty wherever I go and immortalize the through the lens of my camera, a faithful companion always at my side.
+        <br />I try to find beauty wherever I go and immortalize it through the lens of my camera, a faithful companion always at my side.
       </p>
     </article>
 
