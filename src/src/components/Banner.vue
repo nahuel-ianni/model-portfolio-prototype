@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <article class="article">
     <div class="title">
       <h1>Anastasia Arbos</h1>
       <p>Fashion model photographer</p>
@@ -12,7 +12,7 @@
       <br />Get in touch,
       <br />let's work together.
     </p>
-  </section>
+  </article>
 </template>
 
 <script>
@@ -20,6 +20,10 @@ export default { name: "Banner" };
 </script>
 
 <style scoped>
+.article {
+  text-align: center;
+}
+
 .legend {
   color: var(--high-contrast-color);
 }
@@ -27,10 +31,6 @@ export default { name: "Banner" };
 .legend br:first-child,
 .legend br:last-child {
   display: none;
-}
-
-.section {
-  text-align: center;
 }
 
 .title {

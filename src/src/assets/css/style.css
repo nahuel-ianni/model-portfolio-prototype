@@ -45,3 +45,7 @@ h2 {
 p {
   margin: 1rem 0;
 }
+
+section {
+  padding: .5rem;
+}
