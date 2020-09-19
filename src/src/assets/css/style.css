@@ -115,8 +115,7 @@ ul {
     Media queries
    ------------------------------------------------- */
 
-@media (max-width: 1349px),
-(max-height: 725px) {
+@media (max-width: 1349px) {
   body {
     background: linear-gradient(90deg,
         var(--high-contrast-color) 70%,
