@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import { About, Contact, Home, PageNotFound, Portfolio } from '../pages';
+import { Home } from '../pages';
 
 Vue.use(Router);
 
@@ -8,9 +8,9 @@ export default new Router({
   // mode: 'history',
   routes: [
     { path: '/', component: Home, },
-    { path: '/about', component: About, },
-    { path: '/contact', component: Contact, },
-    { path: '/portfolio', component: Portfolio, props: { items: 12 } },
-    { path: '*', component: PageNotFound }
+    // { path: '/about', component: About, },
+    // { path: '/contact', component: Contact, },
+    // { path: '/portfolio', component: Portfolio, props: { items: 12 } },
+    // { path: '*', component: PageNotFound }
   ],
 });
