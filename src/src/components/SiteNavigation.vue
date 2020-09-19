@@ -79,7 +79,6 @@ export default {
 	mix-blend-mode: difference;
   right: 1rem;
   top: 1.125rem;
-  transition: fill 0.2s ease-in-out;
   width: 1.25rem;
   z-index: 100;
 }
