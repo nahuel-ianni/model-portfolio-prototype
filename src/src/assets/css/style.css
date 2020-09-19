@@ -39,6 +39,7 @@ html {
   background-color: var(--low-contrast-color);
   color: var(--low-contrast-color);
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   letter-spacing: .025rem;
   line-height: 1.5;
   padding: 1rem .25rem .25rem;

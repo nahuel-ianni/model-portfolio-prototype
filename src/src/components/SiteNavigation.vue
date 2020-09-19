@@ -79,7 +79,7 @@ export default {
   background: var(--low-contrast-color);
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 2rem;
   height: 100%;
   left: 100%;
   padding: 4rem 1rem;
