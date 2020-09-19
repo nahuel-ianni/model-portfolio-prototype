@@ -1,6 +1,8 @@
 <template>
   <div>
-    <header></header>
+    <header>
+      <SiteNavigation />
+    </header>
 
     <main class="container">
       <Banner />
@@ -11,13 +13,14 @@
 </template>
 
 <script>
-import { Banner } from "./components";
+import { Banner, SiteNavigation } from "./components";
 
 export default {
   name: "App",
 
   components: {
     Banner,
+    SiteNavigation,
   },
 };
 </script>

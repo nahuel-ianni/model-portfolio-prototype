@@ -49,3 +49,7 @@ p {
 section {
   padding: .5rem;
 }
+
+ul {
+  list-style: none;
+}
