@@ -61,7 +61,7 @@ export default {
 
 .expanded-menu {
   left: 0vw !important;
-  fill: var(--high-contrast-color);
+  fill: var(--high-contrast-color)!important;
 }
 
 .nav {
