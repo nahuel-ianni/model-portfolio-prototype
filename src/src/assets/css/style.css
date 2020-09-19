@@ -17,14 +17,8 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: var(--low-contrast-color);
-  color: var(--low-contrast-color);
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: .025rem;
-  line-height: 1.5;
-  padding: 1rem .25rem .25rem;
-  word-spacing: .075rem;
+a {
+  text-decoration: none;
 }
 
 body {
@@ -40,6 +34,16 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+html {
+  background-color: var(--low-contrast-color);
+  color: var(--low-contrast-color);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .025rem;
+  line-height: 1.5;
+  padding: 1rem .25rem .25rem;
+  word-spacing: .075rem;
 }
 
 p {

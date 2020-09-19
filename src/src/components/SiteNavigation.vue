@@ -1,5 +1,5 @@
 <template>
-<nav class="nav">
+  <nav class="nav">
     <svg class="mobile nav-menu svg" :class="{'expanded-menu': expandMenu}" viewBox="0 0 448 512">
       <path class="nav-menu" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
     </svg>
@@ -22,23 +22,23 @@ export default {
   },
 
   methods: {
-    toggleMenuVisibility: function (event) {
+    toggleMenu: function (event) {
       if (this.expandMenu || event.target.classList.contains("nav-menu"))
         this.expandMenu = !this.expandMenu;
     },
   },
 
   created: function () {
-    window.addEventListener("click", this.toggleMenuVisibility);
+    window.addEventListener("click", this.toggleMenu);
   },
 
   destroyed: function () {
-    window.removeEventListener("click", this.toggleMenuVisibility);
+    window.removeEventListener("click", this.toggleMenu);
   },
 };
 </script>
 
-<style>
+<style scoped>
 .a {
   background-image: linear-gradient(
     90deg,
@@ -59,11 +59,18 @@ export default {
   background-size: 95% 1px;
 }
 
+.expanded-menu {
+  left: 0vw !important;
+  fill: var(--high-contrast-color);
+}
+
 .nav {
   position: absolute;
-  right: calc(var(--space-unit) * .75);
+  display: flex;
+  flex-direction: column;
+  right: 1rem;
   text-align: right;
-  top: calc(var(--space-unit) * 1.25);
+  top: 1.5rem;
   z-index: 100;
 }
 
@@ -71,36 +78,22 @@ export default {
   cursor: pointer;
   fill: var(--low-contrast-color);
   position: relative;
+  transition: fill 0.2s ease-in-out;
   width: 1.25rem;
   z-index: 100;
 }
 
 .ul {
+  background-color: var(--low-contrast-color);
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
-}
-
-@media (max-width: 980px) {
-  .expanded-menu {
-    left: 0vw !important;
-    fill: var(--high-contrast-color);
-  }
-
-  .nav {
-    right: calc(var(--space-unit) / 2);
-    top: calc(var(--space-unit) / 1.25);
-  }
-
-  .ul {
-    background-color: var(--low-contrast-color);
-    flex-direction: column;
-    height: 100%;
-    left: 100%;
-    padding: calc(var(--space-unit) * 2) calc(var(--space-unit) / 2);
-    position: fixed;
-    right: 0;
-    top: 0;
-    transition: left 0.2s ease-in-out;
-  }
+  height: 100%;
+  left: 100%;
+  padding: 4rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: left 0.2s ease-in-out;
 }
 </style>
