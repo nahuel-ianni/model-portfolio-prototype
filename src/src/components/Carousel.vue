@@ -57,9 +57,6 @@ export default {
 };
 </script>
 
-<style>
-</style>
-
 <style scoped>
 .carousel {
   display: flex;
@@ -68,14 +65,15 @@ export default {
 
 .controls {
   background-color: var(--low-contrast-color);
-  bottom: 0;
+  bottom: -1px;
   display: flex;
-  gap: 1.5rem;
-  height: auto;
+  height: 3rem;
+  justify-content: space-between;
+  left: calc(85% + 1px);
   padding: 0.75rem;
   position: absolute;
-  right: 14.9%;
-  width: auto;
+  transform: translateX(-100%);
+  width: 5rem;
 }
 
 .img {
