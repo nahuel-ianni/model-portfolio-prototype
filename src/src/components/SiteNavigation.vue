@@ -80,7 +80,7 @@ export default {
   right: 1rem;
   top: 1.125rem;
   width: 1.25rem;
-  z-index: 100;
+  z-index: 125;
 }
 
 .ul {
@@ -95,5 +95,6 @@ export default {
   right: 0;
   top: -1rem;
   transition: left 0.2s ease-in-out;
+  z-index: 100;
 }
 </style>
