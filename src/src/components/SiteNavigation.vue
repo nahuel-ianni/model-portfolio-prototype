@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav @click="toggleMenu" class="nav">
     <svg class="mobile nav-menu svg" viewBox="0 0 384 384">
       <rect class="nav-menu" x="0" y="277.333" width="384" height="42.667" />
       <rect class="nav-menu" x="0" y="170.667" width="384" height="42.667" />
@@ -28,14 +28,6 @@ export default {
       if (this.expandMenu || event.target.classList.contains("nav-menu"))
         this.expandMenu = !this.expandMenu;
     },
-  },
-
-  created: function () {
-    window.addEventListener("click", this.toggleMenu);
-  },
-
-  destroyed: function () {
-    window.removeEventListener("click", this.toggleMenu);
   },
 };
 </script>
