@@ -5,8 +5,6 @@
     <main>
       <Banner />
     </main>
-
-    <footer></footer>
   </div>
 </template>
 
@@ -23,6 +21,3 @@ export default {
 </script>
 
 <style src="./assets/css/style.css" lang="css"></style>
-
-<style scoped>
-</style>

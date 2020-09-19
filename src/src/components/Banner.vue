@@ -36,6 +36,6 @@ export default { name: "Banner" };
 .title {
   background-color: var(--high-contrast-color);
   margin: 0 -0.25rem;
-  padding: 1rem 3rem 0.125rem;
+  padding: 1rem 0.125rem 0.125rem;
 }
 </style>
