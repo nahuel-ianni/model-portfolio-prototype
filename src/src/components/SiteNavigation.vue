@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <svg class="mobile nav-menu svg" :class="{'expanded-menu': expandMenu}" viewBox="0 0 384 384">
+    <svg class="mobile nav-menu svg" viewBox="0 0 384 384">
       <rect class="nav-menu" x="0" y="277.333" width="384" height="42.667" />
       <rect class="nav-menu" x="0" y="170.667" width="384" height="42.667" />
       <rect class="nav-menu" x="0" y="64" width="384" height="42.667" />
@@ -63,30 +63,29 @@ export default {
 
 .expanded-menu {
   left: 0vw !important;
-  fill: var(--high-contrast-color) !important;
 }
 
 .nav {
-  position: fixed;
   display: flex;
   flex-direction: column;
-  right: 1rem;
   text-align: right;
-  top: 1.125rem;
   z-index: 100;
 }
 
 .svg {
   cursor: pointer;
-  fill: var(--low-contrast-color);
-  position: relative;
+  fill: var(--high-contrast-color);
+  position: fixed;
+	mix-blend-mode: difference;
+  right: 1rem;
+  top: 1.125rem;
   transition: fill 0.2s ease-in-out;
   width: 1.25rem;
   z-index: 100;
 }
 
 .ul {
-  background-color: var(--low-contrast-color);
+  background: var(--low-contrast-color);
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
