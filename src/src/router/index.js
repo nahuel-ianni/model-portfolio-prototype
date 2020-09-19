@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import { Home } from '../pages';
+import { Home, PageNotFound } from '../pages';
 
 Vue.use(Router);
 
@@ -11,6 +11,6 @@ export default new Router({
     // { path: '/about', component: About, },
     // { path: '/contact', component: Contact, },
     // { path: '/portfolio', component: Portfolio, props: { items: 12 } },
-    // { path: '*', component: PageNotFound }
+    { path: '*', component: PageNotFound }
   ],
 });
