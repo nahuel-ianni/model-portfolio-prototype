@@ -1,7 +1,6 @@
 <template>
   <div class="carousel">
     <Flickity class="slider" ref="flickity" :options="settings">
-      <!-- <Flickity :style="{ height: `${this.height}px` }" ref="flickity" :options="settings"> -->
       <img
         class="img"
         v-for="index in 4"
@@ -86,7 +85,7 @@ export default {
 
 .slider {
   flex-grow: 1;
-  min-height: 65vh;
+  min-height: 70vh;
 }
 
 .svg {
