@@ -1,7 +1,9 @@
 <template>
   <nav class="nav">
-    <svg class="mobile nav-menu svg" :class="{'expanded-menu': expandMenu}" viewBox="0 0 448 512">
-      <path class="nav-menu" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+    <svg class="mobile nav-menu svg" :class="{'expanded-menu': expandMenu}" viewBox="0 0 384 384">
+      <rect class="nav-menu" x="0" y="277.333" width="384" height="42.667" />
+      <rect class="nav-menu" x="0" y="170.667" width="384" height="42.667" />
+      <rect class="nav-menu" x="0" y="64" width="384" height="42.667" />
     </svg>
 
     <ul class="ul" :class="{'expanded-menu': expandMenu}">
@@ -61,7 +63,7 @@ export default {
 
 .expanded-menu {
   left: 0vw !important;
-  fill: var(--high-contrast-color)!important;
+  fill: var(--high-contrast-color) !important;
 }
 
 .nav {
@@ -70,7 +72,7 @@ export default {
   flex-direction: column;
   right: 1rem;
   text-align: right;
-  top: 1.5rem;
+  top: 1.125rem;
   z-index: 100;
 }
 
@@ -87,7 +89,7 @@ export default {
   background-color: var(--low-contrast-color);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
   height: 100%;
   left: 100%;
   padding: 4rem 1rem;
