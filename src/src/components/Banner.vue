@@ -1,5 +1,5 @@
 <template>
-  <article class="article">
+  <article>
     <div class="title">
       <h1>Anastasia Arbos</h1>
       <p>Fashion model photographer</p>
@@ -20,10 +20,6 @@ export default { name: "Banner" };
 </script>
 
 <style scoped>
-.article {
-  text-align: center;
-}
-
 .legend {
   color: var(--high-contrast-color);
 }

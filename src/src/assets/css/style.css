@@ -23,6 +23,7 @@ a {
 
 body {
   margin: 0;
+  text-align: center;
 }
 
 h1 {
@@ -56,4 +57,32 @@ section {
 
 ul {
   list-style: none;
+}
+
+/* -------------------------------------------------
+    Class styles
+   ------------------------------------------------- */
+
+.link {
+  color: var(--low-contrast-color);
+  position: relative;
+  transition: color 0.2s;
+}
+
+.link:before {
+  border-bottom: solid 1px var(--low-contrast-color);
+  bottom: 2px;
+  content: '';
+  left: 1.25%;
+  position: absolute;
+  transition: border-bottom 0.2s;
+  width: 97.5%;
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+.link:hover:before {
+  border-bottom: solid thin var(--accent-color);
 }
