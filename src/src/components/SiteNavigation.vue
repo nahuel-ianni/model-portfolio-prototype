@@ -67,7 +67,7 @@ export default {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   right: 1rem;
@@ -95,7 +95,7 @@ export default {
   padding: 4rem 1rem;
   position: fixed;
   right: 0;
-  top: 0;
+  top: -1rem;
   transition: left 0.2s ease-in-out;
 }
 </style>
