@@ -1,6 +1,6 @@
 <template>
   <nav @click="toggleMenu" class="nav">
-    <svg class="mobile nav-menu svg" viewBox="0 0 384 384">
+    <svg class="nav-menu svg" viewBox="0 0 384 384">
       <rect class="nav-menu" x="0" y="277.333" width="384" height="42.667" />
       <rect class="nav-menu" x="0" y="170.667" width="384" height="42.667" />
       <rect class="nav-menu" x="0" y="64" width="384" height="42.667" />
@@ -10,7 +10,7 @@
       <li><router-link class="a" to="/">Home</router-link></li>
       <li><router-link class="a" to="/portfolio">Portfolio</router-link></li>
       <li><router-link class="a" to="/about">About</router-link></li>
-      <li><router-link class="a mobile" to="/contact">Contact</router-link></li>
+      <li><router-link class="a" to="/contact">Contact</router-link></li>
     </ul>
   </nav>
 </template>

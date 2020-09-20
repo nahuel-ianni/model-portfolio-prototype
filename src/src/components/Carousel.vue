@@ -90,7 +90,6 @@ export default {
 
 .svg {
   fill: var(--high-contrast-color);
-  width: 1rem;
 }
 
 .svg:hover {

@@ -54,8 +54,13 @@ section {
   padding: .5rem;
 }
 
+svg {
+  width: 1rem;
+}
+
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /* -------------------------------------------------
