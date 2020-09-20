@@ -48,7 +48,7 @@ export default {
 
 .img {
   cursor: pointer;
-  max-width: 45vw;
+  max-width: 42.5vw;
   transition: all 0.2s ease;
 }
 
