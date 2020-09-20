@@ -79,7 +79,6 @@ export default {
   background: var(--low-contrast-color);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   height: 100%;
   left: 100%;
   padding: 4rem 1rem;
@@ -88,5 +87,9 @@ export default {
   top: -1rem;
   transition: left 0.2s ease-in-out;
   z-index: 100;
+}
+
+.ul li {
+  margin-bottom: 2rem;
 }
 </style>

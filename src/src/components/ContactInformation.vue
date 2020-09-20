@@ -43,13 +43,16 @@ export default { name: "ContactInformation" };
 <style scoped>
 .li {
   display: flex;
-  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.li a {
+  margin-left: .75rem;
 }
 
 .ul {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
 }
 </style>
