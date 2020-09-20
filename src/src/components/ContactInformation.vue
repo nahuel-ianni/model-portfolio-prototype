@@ -51,6 +51,7 @@ export default { name: "ContactInformation" };
 <style scoped>
 .li {
   display: flex;
+  height: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
