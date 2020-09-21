@@ -41,7 +41,7 @@ export default { name: "Banner" };
   padding: 1.25rem 0.125rem 0.125rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .legend {
     background-color: var(--low-contrast-color);
     height: 192px;

@@ -38,7 +38,7 @@ export default {
   margin-top: 0.25rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .ul {
     margin: 2rem auto;
   }

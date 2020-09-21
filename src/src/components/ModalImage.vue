@@ -89,7 +89,7 @@ export default {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .img {
     width: 25vw;
   }

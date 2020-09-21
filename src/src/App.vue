@@ -46,7 +46,7 @@ export default {
   flex-grow: 1;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .banner {
     grid-area: left;
   }

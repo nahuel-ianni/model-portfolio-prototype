@@ -33,7 +33,7 @@ export default { name: "About" };
   background-color: var(--high-contrast-color);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .article {
     margin: auto;
   }

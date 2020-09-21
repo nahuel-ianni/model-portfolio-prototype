@@ -65,7 +65,7 @@ export default { name: "ContactInformation" };
   flex-direction: column;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   .ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 14.5rem));

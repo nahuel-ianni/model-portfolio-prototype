@@ -99,7 +99,7 @@ ul {
     Media queries
    ------------------------------------------------- */
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   body {
     background: linear-gradient(90deg,
         var(--high-contrast-color) 75%,
