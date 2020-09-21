@@ -43,7 +43,7 @@ export default {
   right: 1rem;
   top: 0;
   transition: 0.3s ease-in-out;
-  z-index: 550;
+  z-index: 225;
 }
 
 .img {
@@ -65,7 +65,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 200;
 }
 
 .modal-content {

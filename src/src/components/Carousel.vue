@@ -60,7 +60,7 @@ export default {
 .carousel {
   display: flex;
   position: relative;
-  z-index: 1;
+  z-index: 25;
 }
 
 .controls {

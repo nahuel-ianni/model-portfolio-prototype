@@ -23,7 +23,6 @@ export default { name: "Banner" };
 .article {
   display: flex;
   flex-direction: column;
-  z-index: 1;
 }
 
 .legend {
@@ -46,6 +45,7 @@ export default { name: "Banner" };
     height: calc(100vh - 1.25rem);
     position: sticky;
     top: 1rem;
+    z-index: 1;
   }
 
   .legend {

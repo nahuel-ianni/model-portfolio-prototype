@@ -100,7 +100,6 @@ export default {
     text-align: right;
     top: 2.75rem;
     transform: translateX(-100%);
-    z-index: 100;
   }
 
   .svg {
