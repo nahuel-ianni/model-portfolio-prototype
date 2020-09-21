@@ -13,6 +13,9 @@
       </div>
 
       <router-view class="content" />
+
+      <hr class="desktop rule" />
+      <hr class="desktop rule vertical" />
     </main>
 
     <footer></footer>
@@ -66,6 +69,22 @@ export default {
   .content {
     grid-area: bottom;
     margin: 0 2.95rem 2.75rem 0;
+  }
+
+  .rule {
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    bottom: 1.5%;
+    height: 0;
+    position: absolute;
+    right: 1.15%;
+    width: 20%;
+    z-index: 25;
+  }
+
+  .vertical {
+    transform: rotate(90deg);
+    transform-origin: 100% 50%;
   }
 }
 </style>
