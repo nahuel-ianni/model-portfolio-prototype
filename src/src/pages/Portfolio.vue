@@ -41,6 +41,10 @@ export default {
 @media (min-width: 940px) {
   .ul {
     margin: 2rem auto;
+
+    overflow: auto;
+    align-self: stretch;
+    height: 57.5vh;
   }
 }
 </style>
