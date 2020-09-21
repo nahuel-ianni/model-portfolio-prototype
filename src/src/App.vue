@@ -14,6 +14,8 @@
 
       <router-view class="content" />
     </main>
+
+    <footer></footer>
   </div>
 </template>
 

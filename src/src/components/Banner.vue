@@ -45,7 +45,7 @@ export default { name: "Banner" };
   .legend {
     background-color: var(--low-contrast-color);
     height: 192px;
-    padding: 2.5rem 3.5rem;
+    padding: 2.25rem 3.5rem;
   }
 
   .legend br:first-child,

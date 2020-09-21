@@ -67,6 +67,10 @@ ul {
     Class styles
    ------------------------------------------------- */
 
+.desktop {
+  display: none;
+}
+
 .link {
   color: var(--low-contrast-color);
   position: relative;
@@ -95,11 +99,21 @@ ul {
     Media queries
    ------------------------------------------------- */
 
-@media (min-width: 1349px) {
-
-}
-
 @media (min-width: 900px) {
+  body {
+    background: linear-gradient(90deg,
+        var(--high-contrast-color) 80%,
+        var(--low-contrast-color) 80% 100%);
+  }
+
+  footer {
+    background-color: var(--low-contrast-color);
+    bottom: 0;
+    position: fixed;
+    height: calc(192px + 0.25rem);
+    width: 100vw;
+  }
+
   h1 {
     font-size: 3rem;
     font-weight: 600;
@@ -107,5 +121,15 @@ ul {
 
   p {
     margin: 0;
+  }
+
+  .desktop {
+    display: inline-block;
+  }
+
+  .section {
+    background-color: unset !important;
+    text-align: left;
+    z-index: 1;
   }
 }
