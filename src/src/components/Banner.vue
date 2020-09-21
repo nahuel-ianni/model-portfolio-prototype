@@ -23,6 +23,7 @@ export default { name: "Banner" };
 .article {
   display: flex;
   flex-direction: column;
+  z-index: 50;
 }
 
 .legend {
@@ -55,7 +56,8 @@ export default { name: "Banner" };
     display: grid;
     flex-grow: 1;
     justify-content: center;
-    margin-left: -3rem;
+    margin: 0 0 0 -3rem;
+    padding: 0;
     transform: rotate(180deg);
     text-align: left;
     writing-mode: tb-rl;
