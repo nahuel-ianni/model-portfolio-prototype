@@ -48,7 +48,7 @@ export default {
 
 .img {
   cursor: pointer;
-  max-width: 42.5vw;
+  max-width: 42.75vw;
   transition: all 0.2s ease;
 }
 
@@ -86,6 +86,12 @@ export default {
   }
   to {
     transform: scale(1);
+  }
+}
+
+@media (min-width: 900px) {
+  .img {
+    width: 30vw;
   }
 }
 </style>

@@ -37,4 +37,10 @@ export default {
 .content {
   flex-grow: 1;
 }
+
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  } 
+}
 </style>

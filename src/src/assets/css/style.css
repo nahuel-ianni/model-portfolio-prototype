@@ -90,3 +90,22 @@ ul {
 .link:hover:before {
   border-bottom: solid thin var(--accent-color);
 }
+
+/* -------------------------------------------------
+    Media queries
+   ------------------------------------------------- */
+
+@media (min-width: 1349px) {
+
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+  }
+}
