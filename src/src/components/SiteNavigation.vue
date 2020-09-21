@@ -68,7 +68,7 @@ export default {
   cursor: pointer;
   fill: var(--high-contrast-color);
   position: fixed;
-	mix-blend-mode: difference;
+  mix-blend-mode: difference;
   right: 1rem;
   top: 1.125rem;
   width: 1.25rem;
@@ -91,5 +91,28 @@ export default {
 
 .ul li {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 980px) {
+  .nav {
+    position: fixed;
+    right: 0;
+    text-align: right;
+    top: 2.75rem;
+    transform: translateX(-100%);
+    z-index: 100;
+  }
+
+  .svg {
+    display: none;
+  }
+
+  .ul {
+    background-color: unset;
+    flex-direction: row;
+    gap: 1.25rem;
+    padding: 0;
+    position: relative;
+  }
 }
 </style>
