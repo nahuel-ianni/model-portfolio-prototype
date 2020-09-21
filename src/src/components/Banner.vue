@@ -43,6 +43,8 @@ export default { name: "Banner" };
 
 @media (min-width: 900px) {
   .legend {
+    background-color: var(--low-contrast-color);
+    height: 192px;
     padding: 2.5rem 3.5rem;
   }
 
@@ -56,7 +58,7 @@ export default { name: "Banner" };
     display: grid;
     flex-grow: 1;
     justify-content: center;
-    margin: 0 0 0 -3rem;
+    margin: 0;
     padding: 0;
     transform: rotate(180deg);
     text-align: left;

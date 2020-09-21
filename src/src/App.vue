@@ -5,7 +5,12 @@
     </header>
 
     <main class="container">
-      <Banner />
+      <Banner class="banner" />
+
+      <div class="contact desktop">
+        <h2>Contact me</h2>
+        <ContactInformation />
+      </div>
 
       <router-view class="content" />
     </main>
@@ -13,13 +18,14 @@
 </template>
 
 <script>
-import { Banner, SiteNavigation } from "./components";
+import { Banner, ContactInformation, SiteNavigation } from "./components";
 
 export default {
   name: "App",
 
   components: {
     Banner,
+    ContactInformation,
     SiteNavigation,
   },
 };
@@ -39,8 +45,24 @@ export default {
 }
 
 @media (min-width: 900px) {
+  .banner {
+    grid-area: left;
+  }
+
   .container {
-    flex-direction: row;
-  } 
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "left top" "left bottom";
+  }
+
+  .contact {
+    grid-area: top;
+    text-align: left;
+  }
+
+  .content {
+    grid-area: bottom;
+    margin: 0 2.95rem 2.75rem 0;
+  }
 }
 </style>
