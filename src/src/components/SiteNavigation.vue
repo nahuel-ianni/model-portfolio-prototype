@@ -10,7 +10,7 @@
       <li><router-link class="a" to="/">Home</router-link></li>
       <li><router-link class="a" to="/portfolio">Portfolio</router-link></li>
       <li><router-link class="a" to="/about">About</router-link></li>
-      <li><router-link class="a" to="/contact">Contact</router-link></li>
+      <li><router-link class="a mobile" to="/contact">Contact</router-link></li>
     </ul>
   </nav>
 </template>

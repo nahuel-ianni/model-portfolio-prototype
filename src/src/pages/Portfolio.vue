@@ -36,7 +36,11 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 0.25rem;
-  overflow-x: hidden;
-  overflow-y: auto;
+}
+
+@media (min-width: 900px) {
+  .ul {
+    margin: 2rem auto;
+  }
 }
 </style>

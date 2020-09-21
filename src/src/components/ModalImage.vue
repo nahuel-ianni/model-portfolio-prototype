@@ -53,7 +53,7 @@ export default {
 }
 
 .img:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 .modal {
@@ -65,7 +65,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 500;
+  z-index: 100;
 }
 
 .modal-content {
@@ -91,7 +91,7 @@ export default {
 
 @media (min-width: 900px) {
   .img {
-    width: 30vw;
+    width: 25vw;
   }
 }
 </style>

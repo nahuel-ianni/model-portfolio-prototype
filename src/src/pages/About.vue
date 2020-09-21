@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <article>
+    <article class="article">
       <h2>Welcome!</h2>
 
       <p>
@@ -31,5 +31,23 @@ export default { name: "About" };
 
 .section {
   background-color: var(--high-contrast-color);
+}
+
+@media (min-width: 900px) {
+  .article {
+    margin: auto;
+  }
+
+  .img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+
+  .section {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 </style>

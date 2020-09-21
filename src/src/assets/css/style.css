@@ -127,9 +127,13 @@ ul {
     display: inline-block;
   }
 
+  .mobile {
+    display: none;
+  }
+
   .section {
     background-color: unset !important;
     text-align: left;
-    z-index: 1;
+    z-index: 25;
   }
 }

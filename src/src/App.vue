@@ -54,6 +54,7 @@ export default {
   .container {
     display: grid;
     grid-template-columns: auto 1fr;
+    grid-auto-rows: auto 1fr;
     grid-template-areas: "left top" "left bottom";
   }
 

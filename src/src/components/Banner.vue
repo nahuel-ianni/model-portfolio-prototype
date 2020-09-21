@@ -23,7 +23,7 @@ export default { name: "Banner" };
 .article {
   display: flex;
   flex-direction: column;
-  z-index: 50;
+  z-index: 1;
 }
 
 .legend {
