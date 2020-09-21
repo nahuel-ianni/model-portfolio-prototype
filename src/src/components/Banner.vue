@@ -42,8 +42,13 @@ export default { name: "Banner" };
 }
 
 @media (min-width: 940px) {
+  .article {
+    height: calc(100vh - 1.25rem);
+    position: sticky;
+    top: 1rem;
+  }
+
   .legend {
-    background-color: var(--low-contrast-color);
     height: 192px;
     padding: 2.25rem 3.5rem;
   }
