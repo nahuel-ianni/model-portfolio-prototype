@@ -75,7 +75,7 @@ export default {
     border-bottom: 1px solid rgba(255, 255, 255, 1);
     bottom: 1.5%;
     height: 0;
-    position: absolute;
+    position: fixed;
     right: 1.15%;
     width: 20%;
     z-index: 25;
