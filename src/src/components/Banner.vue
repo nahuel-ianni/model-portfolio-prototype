@@ -59,12 +59,12 @@ export default { name: "Banner" };
   }
 
   .title {
-    align-content: center;
+    align-content: flex-start;
     display: grid;
     flex-grow: 1;
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 1rem 0 0;
     transform: rotate(180deg);
     writing-mode: tb-rl;
   }
