@@ -104,6 +104,8 @@ ul {
     background: linear-gradient(90deg,
         var(--high-contrast-color) 75%,
         var(--low-contrast-color) 75% 100%);
+
+    text-align: left;
   }
 
   footer {
@@ -133,7 +135,6 @@ ul {
 
   .section {
     background-color: unset !important;
-    text-align: left;
     z-index: 25;
   }
 

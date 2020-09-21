@@ -50,7 +50,7 @@ export default { name: "Banner" };
 
   .legend {
     height: 192px;
-    padding: 2.25rem 3.5rem;
+    padding: 2.25rem 3.5rem 2.25rem 1rem;
   }
 
   .legend br:first-child,
@@ -66,7 +66,6 @@ export default { name: "Banner" };
     margin: 0;
     padding: 0;
     transform: rotate(180deg);
-    text-align: left;
     writing-mode: tb-rl;
   }
 }

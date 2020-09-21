@@ -63,7 +63,6 @@ export default {
 
   .contact {
     grid-area: top;
-    text-align: left;
   }
 
   .content {
