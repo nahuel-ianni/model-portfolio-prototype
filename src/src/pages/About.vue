@@ -1,12 +1,12 @@
 <template>
   <section class="section">
-    <article class="article">
-      <h2>Welcome!</h2>
+    <article>
+      <h2 class="title">Welcome!</h2>
 
       <p>
         <br />I'm Anastasia, a passionate photographer.
         <br />
-        <br />I've been part of the fashion industry for over 20 years now, as well as a hobbist landscape lover.
+        <br />I've been part of the fashion industry for over 20 years, as well as a hobbist landscape lover.
         <br />I try to find beauty wherever I go and immortalize it through the lens of my camera, a faithful companion always at my side.
       </p>
     </article>
@@ -34,10 +34,6 @@ export default { name: "About" };
 }
 
 @media (min-width: 940px) {
-  .article {
-    margin: auto;
-  }
-
   .img {
     object-fit: cover;
     object-position: center;
@@ -45,9 +41,16 @@ export default { name: "About" };
   }
 
   .section {
+    color: var(--high-contrast-color);
     display: grid;
-    gap: 1.5rem;
+    font-weight: 200;
+    gap: 2.5rem;
     grid-template-columns: 1fr 1fr;
+    mix-blend-mode: exclusion;
+  }
+
+  .title {
+    font-weight: 400;
   }
 }
 </style>

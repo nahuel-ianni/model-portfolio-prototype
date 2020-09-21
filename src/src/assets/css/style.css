@@ -136,4 +136,12 @@ ul {
     text-align: left;
     z-index: 25;
   }
+
+  @media (min-width: 1250px) {
+    body {
+      background: linear-gradient(135deg,
+          var(--high-contrast-color) 50%,
+          var(--low-contrast-color) 50% 100%);
+    }
+  }
 }
