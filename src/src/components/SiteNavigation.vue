@@ -98,8 +98,7 @@ export default {
     position: fixed;
     right: 0;
     text-align: right;
-    top: 2.75rem;
-    transform: translateX(-100%);
+    top: 1.25rem;
   }
 
   .svg {
@@ -111,7 +110,7 @@ export default {
     flex-direction: row;
     gap: 1.25rem;
     padding: 0;
-    position: relative;
+    position: unset;
   }
 }
 </style>
